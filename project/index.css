@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #168;
+    background-image: url('https://source.unsplash.com/1600x900/?mountain');
+    font-family: 'Zen Kurenaido', sans-serif; 
+    font-size: 130%;
+
+}
+
+.card {
+    background: #bebebea0;
+    color: rgb(235, 248, 187);
+    padding: 3em;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    margin: 0.6em;
+    border-radius: 40%;
+    border: none;
+    height: 2.3em;
+    width: 2.5em;
+    outline: none;
+    background: #f0f5b4;
+    color: grey;
+    cursor: pointer;
+    transition: 0.2s cubic-bezier(0.53, -0.27, 0.5, 1.17);
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    border-radius: 7px;
+    background: #f0f5b4;
+    color: cadetblue;
+    font-family: inherit;
+    font-size: 100%;
+}
+  
+button:hover {background: #fdfafa;}
+
+h1.temp {
+    margin: 0;
+    margin-bottom:0.3em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 0.1em;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Fetching Weather Info...";
+    color: rgb(231, 230, 146);
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
